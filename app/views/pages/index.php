@@ -1,7 +1,12 @@
-<?php require APPROOT .'/views/inc/header.php'; ?>
-
-<h1><?= $data['title']?></h1>
-
-
 <?php require APPROOT .'/views/inc/footer.php'; ?>
 
+<?php 
+ob_start() 
+?>
+
+
+<?php 
+$content =ob_get_clean();
+$titre = $data['title'] ;
+require APPROOT."/views/inc/template.html.php";
+?>
