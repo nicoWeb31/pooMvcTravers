@@ -14,7 +14,7 @@ class Core{
 
     public function __construct()
     {
-        var_dump($this->getUrl());
+        // var_dump($this->getUrl());
         $url = $this->getUrl();
 
         //look in controllrt for first value
